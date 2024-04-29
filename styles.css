@@ -1,0 +1,36 @@
+/* Flexbox-Container für die Spalten */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Verteilt die Spalten gleichmäßig */
+    height: 200px; /* Höhe der Spalten */
+}
+
+/* Jede Spalte sollte gleich groß sein */
+.column {
+    flex: 1; /* Jeder Spalte die gleiche Flexibilität geben */
+    display: flex;
+    align-items: center; /* Vertikal in der Mitte ausrichten */
+    justify-content: center; /* Horizontal in der Mitte ausrichten */
+}
+
+/* Navigation oben auf der Seite */
+.navigation {
+    list-style: none; /* Entfernt Aufzählungszeichen */
+    display: flex; /* Flexbox-Layout verwenden */
+    justify-content: space-around; /* Verteilung der Links */
+    padding: 10px; /* Etwas Abstand innerhalb der Navigation */
+    background-color: lightgray; /* Hintergrundfarbe der Navigation */
+}
+
+.navigation li {
+    margin: 0 10px; /* Abstand zwischen den Links */
+}
+
+.navigation a {
+    text-decoration: none; /* Unterstrich entfernen */
+    color: black; /* Textfarbe */
+}
+
+.navigation a:hover {
+    text-decoration: underline; /* Unterstrich beim Hover */
+}
